@@ -1,0 +1,21 @@
+version: '3'
+services:
+  graphWeb:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: 1ocalhost:4000/staging-graphWeb:latest
+    ports:
+      - "5000"
+    environment:
+      - "SERVICE_NAME=graphWeb"
+      - "SERVICE_TAGS=main"
+      - "ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}"
+    deploy:
+      mode: replicated
+      replicas: 1
+
+networks:
+  default:
+    external:
+      name: mongo_network
