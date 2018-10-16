@@ -34,7 +34,7 @@ namespace GraphWeb
             //    optins.UseMySql($@"server=139.196.139.156;Port=3306;user id = mimikko; Password=mimikko_mysql;database=test;Convert Zero Datetime=True;"));
 
             var options = new DbContextOptionsBuilder<MimikkoCloudTestDbContext>()
-              .UseMySql($@"server=139.196.139.156;Port=3306;user id = mimikko; Password=mimikko_mysql;database=test;Convert Zero Datetime=True;")
+              .UseMySql($@"server=118.24.96.212;Port=3306;user id = mimikko; Password=123456;database=test;Convert Zero Datetime=True;")
               .Options;
             services.AddScoped(s => new MimikkoCloudTestDbContext(options));
 
