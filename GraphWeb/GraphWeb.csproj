@@ -24,7 +24,6 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.0.0" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.0.1-preview-10071" />
-    <PackageReference Include="Mimikko.WebApi.Framework.User.Primitives" Version="1.0.31" />
   </ItemGroup>
 
 </Project>
