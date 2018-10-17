@@ -1,14 +1,14 @@
 version: '3'
 services:
-  graphWeb:
+  graphweb:
     build:
       context: .
       dockerfile: ./Dockerfile
-    image: 127.0.0.1:4000/staging-graphWeb:latest
+    image: 1ocalhost:4000/staging-graphweb:latest
     ports:
       - "4001:5000"
     environment:
-      - "SERVICE_NAME=graphWeb"
+      - "SERVICE_NAME=graphweb"
       - "SERVICE_TAGS=main"
       - "ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}"
     deploy:
